@@ -1,5 +1,5 @@
 body {
-    background-color: #7fd785;
+    background-color: #fcd615;
     color: #222222;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -9,6 +9,36 @@ body {
 
 h1,h2,h3 {
     color: #1f4e79;
+}
+.header{
+    background-color: hsla(0, 0%, 7%);
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    padding: 2rem;
+    
+    
+}
+.header_ul{
+    list-style: none;
+    display:flex;
+    gap: 1.5rem;
+}
+.header_a{
+    color:hsl(42.29, 82.68%, 50.2%);
+    text-decoration:none;
+    transition: color 0.2s ease-in-out;
+}
+.header_a:hover{
+    color:hsl(0, 0%, 99%);
+    
+}
+
+@media screen and (max-width:870px) {
+    .header_ul{
+        flex-direction: column;
+    }
 }
 
 #profileCard, .section, #hobi, .gallery {
