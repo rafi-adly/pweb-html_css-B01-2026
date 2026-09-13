@@ -1,114 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Profil Dokter Tirta Mandira Hudhi</title>
-    <link rel="stylesheet" href="HomeStyle.css" />
+    <title>Tanya Dok - Tirta Mandira Hudhi</title>
+    <link rel="stylesheet" href="TanyaDok.css" />
 </head>
 <body>
-    <header>
-    <img src="profilePicture.jpg" alt="Foto profil" width="200" height="200" id="profilePicture">
+    <header class="header">
+        <nav class="header_nav">
+            <input type="checkbox" id="menuToggle" class="menuToggle">
+            <label for="menuToggle" class="menuButton" aria-label="Buka menu navigasi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-    <h1>Tirta Mandira Hudhi</h1>
+            <ul class="header_ul">
+                <li class="header_li">
+                    <a class="header_a" href="Home.html"> Home </a>
+                </li>
+                <li class="header_li">
+                    <a class="header_a" href="Biography.html"> Kisah Hidup </a>
+                </li>
+                <li class="header_li">
+                    <a class="header_a" href="Achievements.html"> Capaian Hidup </a>
+                </li>
+                <li class="header_li">
+                    <a class="header_a" href="Gallery.html"> Galeri </a>
+                </li>
+                <li class="header_li">
+                    <a class="header_a" href="TanyaDok.html"> Tanya Dok </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Medical Doctor | Businessperson <br> Health and Sports Content Creator | Social Media Influencer </h2>
+    <main>
+        <section class="formCard">
+            <div class="formIntro">
+                <p class="eyebrow">TANYA DOK</p>
+                <h1>Konsultasikan Pertanyaanmu</h1>
+                <p>
+                    Gunakan formulir ini untuk mengirim pertanyaan seputar edukasi kesehatan,
+                    olahraga, dan gaya hidup. Form ini ditujukan untuk pertanyaan edukatif,
+                    bukan pengganti pemeriksaan langsung oleh tenaga kesehatan.
+                </p>
+            </div>
 
+            <form id="questionForm" action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Data Penanya</legend>
 
-    <p>
-       I'm a medical doctor and passionate about fashion, marketing  and also entrepreneur
-    </p>
-    <div class="socialMedia">
-        <a href="https://www.instagram.com/dr.tirta/">Instagram</a>
-        <a href="https://x.com/tirta_cipeng">Twitter</a>
-        <a href="https://www.tiktok.com/@tirtacipeng">Tiktok</a>
-        <a href="https://www.linkedin.com/in/tirtamandira/">LinkedIn</a>
-    </div>
-</header>
+                    <div class="formGrid">
+                        <div class="formGroup full">
+                            <label for="nama">Nama <span>*</span></label>
+                            <input type="text" id="nama" name="nama" placeholder="Nama kamu" required>
+                        </div>
 
-<div class="section" id="jadwalKuliah">
-    <h2>Jadwal Kuliah</h2>
+                        <div class="formGroup">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                        </div>
 
-    <table>
-        <tr>
-            <th>Hari</th>
-            <th>Mata Kuliah</th>
-            <th>Jam</th>
-            <th>Ruangan</th>
-        </tr>
-        <tr>
-            <td>Senin</td>
-            <td>Praktikum Pemrograman Website</td>
-            <td>07.00</td>
-            <td>Lab DTI 902</td>
-        </tr>
-        <tr>
-            <td>Selasa</td>
-            <td>Komunikasi Professional</td>
-            <td>09.30</td>
-            <td>Lab SOC</td>
-        </tr>
-        <tr>
-            <td>Rabu</td>
-            <td>Keamanan Jaringan Komputer</td>
-            <td>12.30</td>
-            <td>Ruang 702</td>
-        </tr>
-    </table>
-</div>
-<div id="hobi">
-    <h2>Hobi</h2>
+                        <div class="formGroup">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+                        </div>
 
-    <ul>
-        <li>Weightlifting</li>
-        <li>Main TFT</li>
-        <li>Doomscrolling</li>
-        <li>Tidur</li>
-    </ul>
-</div>
-<section>
-<div class="gallery" id="funfact">
+                        <div class="formGroup">
+                            <label for="umur">Umur</label>
+                            <input type="number" id="umur" name="umur" min="1" max="120" placeholder="Contoh: 20">
+                        </div>
 
-    <div class="card">
-        <h3>Weightlifting</h3>
-        <p>
-            Saya sedang belajar berbagai gerakan weightlifting
-            seperti snatch serta clean and jerk.
-        </p>
-    </div>
+                        <div class="formGroup">
+                            <label for="website">Website / Portofolio</label>
+                            <input type="url" id="website" name="website" placeholder="https://...">
+                        </div>
 
-    <div class="card">
-        <h3>Gaming</h3>
-        <p>
-            Salah satu game yang saya mainkan adalah Teamfight Tactics
-            untuk mengisi waktu luang.
-        </p>
-    </div>
+                        <div class="formGroup">
+                            <label for="tanggal">Tanggal Pertanyaan</label>
+                            <input type="date" id="tanggal" name="tanggal">
+                        </div>
 
-    <div class="card">
-        <h3>Musik</h3>
-        <p>
-            Saya suka mendengarkan berbagai jenis musik dari Jepang,
-            Korea, Western, hingga Asia Tenggara.
-        </p>
-    </div>
+                        <div class="formGroup">
+                            <label for="jam">Waktu yang Nyaman Dihubungi</label>
+                            <input type="time" id="jam" name="jam">
+                        </div>
 
-</div>
-</section>
-    <div class="section" id="kontak">
-    <h2>Hubungi Saya</h2>
+                        <div class="formGroup">
+                            <label for="bulan">Bulan Mulai Kebiasaan</label>
+                            <input type="month" id="bulan" name="bulan">
+                        </div>
 
-    <form>
-        <label for="nama">Nama</label>
-        <input type="text" id="nama" placeholder="Nama kamu">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email kamu">
-<br>
-        <label for="pesan">Pesan</label>
-        <textarea id="pesan" placeholder="Tulis pesanmu di sini"></textarea>
-<br>
-        <button type="submit">Kirim</button>
-    </form>
-    </div>
+                        <div class="formGroup">
+                            <label for="minggu">Minggu Pengisian</label>
+                            <input type="week" id="minggu" name="minggu">
+                        </div>
+
+                        <div class="formGroup full">
+                            <label for="waktu">Tanggal &amp; Waktu Lengkap</label>
+                            <input type="datetime-local" id="waktu" name="waktu">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pertanyaan Edukasi</legend>
+
+                    <div class="formGrid">
+                        <div class="formGroup full">
+                            <label for="topik">Topik Pertanyaan <span>*</span></label>
+                            <select id="topik" name="topik" required>
+                                <option value="" selected disabled>Pilih topik</option>
+                                <option value="kesehatan">Kesehatan umum</option>
+                                <option value="olahraga">Olahraga &amp; kebugaran</option>
+                                <option value="nutrisi">Nutrisi &amp; pola makan</option>
+                                <option value="gaya-hidup">Gaya hidup</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="formGroup full">
+                            <label>Jenis Pertanyaan</label>
+                            <div class="choiceGroup">
+                                <label class="choice">
+                                    <input type="radio" name="jenis" value="edukasi" checked>
+                                    <span>Pertanyaan edukasi</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="jenis" value="olahraga">
+                                    <span>Pertanyaan olahraga</span>
+                                </label>
+                                <label class="choice">
+                                    <input type="radio" name="jenis" value="lainnya">
+                                    <span>Lainnya</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="formGroup full">
+                            <label for="tingkat">Seberapa Mendesak?</label>
+                            <input type="range" id="tingkat" name="tingkat" min="1" max="10" value="5">
+                            <div class="rangeLabel">
+                                <span>1 — Santai</span>
+                                <span>10 — Mendesak</span>
+                            </div>
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="warna">Warna Profil</label>
+                            <input type="color" id="warna" name="warna" value="#1f4e79">
+                        </div>
+
+                        <div class="formGroup">
+                            <label for="berkas">Lampiran Pendukung</label>
+                            <input type="file" id="berkas" name="berkas" accept=".jpg,.jpeg,.png,.pdf">
+                            <small>Opsional. Maksimal sesuai ketentuan platform.</small>
+                        </div>
+
+                        <div class="formGroup full">
+                            <label for="pesan">Pertanyaan <span>*</span></label>
+                            <textarea id="pesan" name="pesan" placeholder="Tulis pertanyaanmu secara jelas..." required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Persetujuan Publikasi</legend>
+
+                    <div class="consentBox">
+                        <label class="checkChoice">
+                            <input type="checkbox" id="samarkan" name="samarkan" value="ya" checked>
+                            <span>
+                                <strong>Saya menyetujui nama saya disamarkan</strong><br>
+                                Nama dapat ditampilkan sebagai anonim atau nama samaran jika pertanyaan
+                                digunakan sebagai konten edukasi.
+                            </span>
+                        </label>
+
+                        <label class="checkChoice">
+                            <input type="checkbox" id="publikasi" name="publikasi" value="setuju">
+                            <span>
+                                Saya bersedia pertanyaan saya digunakan sebagai materi edukasi.
+                            </span>
+                        </label>
+
+                        <label class="checkChoice">
+                            <input type="checkbox" id="ketentuan" name="ketentuan" value="setuju" required>
+                            <span>
+                                Saya memahami bahwa jawaban yang diberikan bersifat edukatif dan
+                                bukan pengganti diagnosis atau konsultasi langsung dengan dokter.
+                            </span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="formActions">
+                    <button type="reset" class="resetButton">Reset</button>
+                    <button type="submit" class="submitButton">Kirim Pertanyaan &rarr;</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <small>Dibuat dengan sepenuh hati oleh mas-mas biasa</small>
     </footer>
