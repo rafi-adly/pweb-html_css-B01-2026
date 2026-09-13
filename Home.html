@@ -7,6 +7,13 @@
 <body>
     <header class="header">
         <nav class="header_nav">
+            <input type="checkbox" id="menuToggle" class="menuToggle">
+            <label for="menuToggle" class="menuButton" aria-label="Buka menu navigasi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <ul class="header_ul">
                 <li class="header_li">
                     <a class="header_a" href="Home.html"> Home </a>
@@ -22,114 +29,42 @@
                 </li>
                 <li class="header_li">
                     <a class="header_a" href="TanyaDok.html"> Tanya Dok </a>
-                </li>    
+                </li>
             </ul>
         </nav>
     </header>
-    <div id="profileCard">
-    <img src="profilePicture.jpg" alt="Foto profil" width="200" height="200" id="profilePicture">
 
-    <h1>Tirta Mandira Hudhi</h1>
+    <main>
+        <section id="profileCard">
+            <div class="profilePhotoWrap">
+                <img src="profilePicture.jpg" alt="Foto profil Tirta Mandira Hudhi" id="profilePicture">
+                <span class="profileBadge">HEALTH &amp; SPORTS</span>
+            </div>
 
-    <h2>Medical Doctor | Businessperson <br> Health and Sports Content Creator | Social Media Influencer </h2>
+            <div class="profileContent">
+                <p class="eyebrow">MEDICAL DOCTOR • CONTENT CREATOR</p>
+                <h1>Tirta Mandira Hudhi</h1>
+                <h2>Medical Doctor | Businessperson</h2>
+                <p class="profileRole">Health and Sports Content Creator | Social Media Influencer</p>
 
+                <p class="profileDescription">
+                    I'm a medical doctor and passionate about fashion, marketing and also entrepreneur.
+                    Melalui platform ini, saya berbagi informasi dan edukasi seputar kesehatan,
+                    olahraga, serta gaya hidup.
+                </p>
 
-    <p>
-       I'm a medical doctor and passionate about fashion, marketing  and also entrepreneur
-    </p>
-    <div class="socialMedia">
-        <a href="https://www.instagram.com/dr.tirta/">Instagram</a>
-        <a href="https://x.com/tirta_cipeng">Twitter</a>
-        <a href="https://www.tiktok.com/@tirtacipeng">Tiktok</a>
-        <a href="https://www.linkedin.com/in/tirtamandira/">LinkedIn</a>
-    </div>
-</div>
+                <div class="socialMedia">
+                    <a href="https://www.instagram.com/dr.tirta/">Instagram</a>
+                    <a href="https://x.com/tirta_cipeng">Twitter</a>
+                    <a href="https://www.tiktok.com/@tirtacipeng">Tiktok</a>
+                    <a href="https://www.linkedin.com/in/tirtamandira/">LinkedIn</a>
+                </div>
 
-<div class="section" id="jadwalKuliah">
-    <h2>Jadwal Kuliah</h2>
+                <a class="profileCta" href="TanyaDok.html">Tanya Dok &rarr;</a>
+            </div>
+        </section>
+    </main>
 
-    <table>
-        <tr>
-            <th>Hari</th>
-            <th>Mata Kuliah</th>
-            <th>Jam</th>
-            <th>Ruangan</th>
-        </tr>
-        <tr>
-            <td>Senin</td>
-            <td>Praktikum Pemrograman Website</td>
-            <td>07.00</td>
-            <td>Lab DTI 902</td>
-        </tr>
-        <tr>
-            <td>Selasa</td>
-            <td>Komunikasi Professional</td>
-            <td>09.30</td>
-            <td>Lab SOC</td>
-        </tr>
-        <tr>
-            <td>Rabu</td>
-            <td>Keamanan Jaringan Komputer</td>
-            <td>12.30</td>
-            <td>Ruang 702</td>
-        </tr>
-    </table>
-</div>
-<div id="hobi">
-    <h2>Hobi</h2>
-
-    <ul>
-        <li>Weightlifting</li>
-        <li>Main TFT</li>
-        <li>Doomscrolling</li>
-        <li>Tidur</li>
-    </ul>
-</div>
-<section>
-<div class="gallery" id="funfact">
-
-    <div class="card">
-        <h3>Weightlifting</h3>
-        <p>
-            Saya sedang belajar berbagai gerakan weightlifting
-            seperti snatch serta clean and jerk.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Gaming</h3>
-        <p>
-            Salah satu game yang saya mainkan adalah Teamfight Tactics
-            untuk mengisi waktu luang.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Musik</h3>
-        <p>
-            Saya suka mendengarkan berbagai jenis musik dari Jepang,
-            Korea, Western, hingga Asia Tenggara.
-        </p>
-    </div>
-
-</div>
-</section>
-    <div class="section" id="kontak">
-    <h2>Hubungi Saya</h2>
-
-    <form>
-        <label for="nama">Nama</label>
-        <input type="text" id="nama" placeholder="Nama kamu">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email kamu">
-<br>
-        <label for="pesan">Pesan</label>
-        <textarea id="pesan" placeholder="Tulis pesanmu di sini"></textarea>
-<br>
-        <button type="submit">Kirim</button>
-    </form>
-    </div>
     <footer>
         <small>Dibuat dengan sepenuh hati oleh mas-mas biasa</small>
     </footer>
